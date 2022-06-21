@@ -1,0 +1,257 @@
+[
+  {
+    "id": "001",
+    "img": "img/sirnaya.jpeg",
+    "name": "Сырная",
+    "label": "Новый рецепт",
+    "description": "Моцарелла, сыры чеддер и пармезан, соус альфредо",
+    "price": "245",
+    "category": "Пицца",
+    "weight": "490",
+    "size": {
+      "22": 22,
+      "30": 30
+    },
+    "modifier": {
+      "Цыпленок":  "Цыпленок",
+      "Перец халапенью":  "Перец халапенью",
+      "Моцарелла":  "Моцарелла",
+      "Шампиньоны":  "Шампиньоны"
+    },
+    "bju": {
+      "belkov": "14",
+      "jirov": "16",
+      "uglevodov": "56"
+    }
+  },
+  {
+    "id": "002",
+    "img": "img/indi.png",
+    "name": "Азия",
+    "label": "",
+    "description": "Индейка, соус альфредо, мандарины, цитрусовый соус, моцарелла, смесь сыров чеддер и пармезан",
+    "price": "529",
+    "category": "Пицца",
+    "weight": "590"
+  },
+  {
+    "id": "003",
+    "img": "img/pepperony.jpeg",
+    "name": "Пепперони фреш",
+    "label": "",
+    "description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус",
+    "price": "567",
+    "category": "Пицца",
+    "weight": "550"
+  },
+  {
+    "id": "004",
+    "img": "img/pesto.jpeg",
+    "name": "Песто",
+    "label": "",
+    "description": "Цыпленок, соус песто, кубики брынзы, томаты, моцарелла, соус альфредо",
+    "price": "525",
+    "category": "Пицца",
+    "weight": "550"
+  },
+  {
+    "id": "005",
+    "img": "img/fila.jpeg",
+    "name": "Ролл Филадельфия",
+    "label": "",
+    "description": "Ролл со сливочным сыром, обернутый лентой свежего лосося с трех сторон",
+    "price": "319",
+    "category": "Суши и роллы",
+    "weight": "235"
+  },
+  {
+    "id": "006",
+    "img": "img/domino.jpeg",
+    "name": "Ролл Домино",
+    "label": "",
+    "description": "Два в одном. Свежий лосось, угорь, огурец, сливочный сыр, соус унаги и кунжут",
+    "price": "242",
+    "category": "Суши и роллы",
+    "weight": "190"
+  },
+  {
+    "id": "007",
+    "img": "img/alaska.jpeg",
+    "name": "Ролл Аляска",
+    "label": "",
+    "description": "Свежий лосось, крабовый микс, огурец, соус тобико и кунжут",
+    "price": "199",
+    "category": "Суши и роллы",
+    "weight": "120"
+  },
+  {
+    "id": "008",
+    "img": "img/snack.jpeg",
+    "name": "Снэк ролл",
+    "label": "",
+    "description": "Копченый цыплёнок, огурец, жареный лук, сливочный сыр и крошка чипсов",
+    "price": "320",
+    "category": "Суши и роллы",
+    "weight": "215"
+  },
+  {
+    "id": "009",
+    "img": "img/bonito.jpeg",
+    "name": "Бонито",
+    "label": "",
+    "description": "С тунцом, сливочным сыром, огурцом и стружкой тунца",
+    "price": "119",
+    "category": "Суши и роллы",
+    "weight": "190"
+  },
+  {
+    "id": "010",
+    "img": "img/udon.jpeg",
+    "name": "Удон с говядиной",
+    "label": "",
+    "description": "Удон с говядиной, шампиньонами, болгарским перцем, луком порей, репчатым луком, чесноком, пекинской капустой, цукини, цветной капустой, соусом Вок и кунжутом ",
+    "price": "359",
+    "category": "WOK",
+    "weight": "390"
+  },
+  {
+    "id": "011",
+    "img": "img/hurasame.jpeg",
+    "name": "Харусаме с говядиной",
+    "label": "New",
+    "description": "Лапша харусаме с говядиной, шампиньонами, болгарским перцем, луком порей, репчатым луком, чесноком, пекинской капустой, цукини, цветной капустой, соусом Вок и кунжутом",
+    "price": "539",
+    "category": "WOK",
+    "weight": "390"
+  },
+  {
+    "id": "012",
+    "img": "img/rice.jpeg",
+    "name": "Рис с креветками",
+    "label": "HOT",
+    "description": "Рис с креветками, шампиньонами, болгарским перцем, луком порей, репчатым луком, чесноком, пекинской капустой, цукини, цветной капустой, соусом Том ям и кунжутом",
+    "price": "389",
+    "category": "WOK",
+    "weight": "290"
+  },
+  {
+    "id": "013",
+    "img": "img/salat.jpeg",
+    "name": "Салат с курицей",
+    "label": "",
+    "description": "С курицей, помидором, болгарским перцем, салатом Айсберг, огурцом и лимоном ",
+    "price": "209",
+    "category": "Горячее и салаты",
+    "weight": "390"
+  },
+  {
+    "id": "014",
+    "img": "img/cezar.jpeg",
+    "name": "Салат Цезарь",
+    "label": "",
+    "description": "С салатом Айсберг, помидорами Черри, копченой курицей, сухариками, сыром Пармезан и соусом Цезарь ",
+    "price": "299",
+    "category": "Горячее и салаты",
+    "weight": "145"
+  },
+  {
+    "id": "015",
+    "img": "img/greek.jpeg",
+    "name": "Салат Греческий",
+    "label": "",
+    "description": "С салатом Айсберг, болгарским перцем, помидором, огурцом, красным луком, маслинами, сыром Сиртаки и Греческим соусом",
+    "price": "219",
+    "category": "Горячее и салаты",
+    "weight": "175"
+  },
+  {
+    "id": "016",
+    "img": "img/sirnie palochki.jpeg",
+    "name": "Сырные палочки",
+    "label": "",
+    "description": "6 шт",
+    "price": "199",
+    "category": "Закуски",
+    "weight": "105"
+  },
+  {
+    "id": "017",
+    "img": "img/smail.jpeg",
+    "name": "Смайлики",
+    "label": "",
+    "description": "Картофельные смайлики",
+    "price": "199",
+    "category": "Закуски",
+    "weight": "145"
+  },
+  {
+    "id": "018",
+    "img": "img/krispi kombo.jpeg",
+    "name": "Криспи комбо",
+    "label": "",
+    "description": "Комбо",
+    "price": "450",
+    "category": "Комбо",
+    "weight": "145"
+  },
+  {
+    "id": "019",
+    "img": "img/fish.jpeg",
+    "name": "Фиш ролл",
+    "label": "",
+    "description": "Фиш ролл",
+    "price": "19",
+    "category": "Закуски",
+    "weight": "145"
+  },
+  {
+    "id": "020",
+    "img": "img/no_photo.jpeg",
+    "name": "Purse Organizer Insert, Felt Bag organizer with zipper",
+    "label": "",
+    "description": "Black / Felt",
+    "price": "29",
+    "category": "Accessories",
+    "weight": "145"
+  },
+  {
+    "id": "021",
+    "img": "img/no_photo.jpeg",
+    "name": "Spyder Mens Pinnacle GTX Ski Glove",
+    "label": "",
+    "description": "Black",
+    "price": "239",
+    "category": "Accessories",
+    "weight": "145"
+  },
+  {
+    "id": "022",
+    "img": "img/no_photo.jpeg",
+    "name": "Salvatore Ferragamo Double Gancini Glossy Buckle",
+    "label": "",
+    "description": "Black/Brown Reversible Belt",
+    "price": "417",
+    "category": "Accessories",
+    "weight": "145"
+  },
+  {
+    "id": "023",
+    "img": "img/no_photo.jpeg",
+    "name": "American Hat Makers Sierra Cowboy Hat",
+    "label": "new",
+    "description": "Handcrafted, Genuine Leather, Breathable / Latte",
+    "price": "217",
+    "category": "Accessories",
+    "weight": "145"
+  },
+  {
+    "id": "024",
+    "img": "img/no_photo.jpeg",
+    "name": "Oakley Men's Flak 2.0 XL OO9188 Sunglasses Bundle",
+    "label": "",
+    "description": "Matte Black/Prizm Deep Water Polarized",
+    "price": "206",
+    "category": "Accessories",
+    "weight": "145"
+  }
+]

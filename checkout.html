@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="checkout container">
+      <div class="page-header profile-header">
+        <div class="to-back">
+          <a href="index.html">
+            <i class="ri-arrow-left-s-line"></i>
+          </a>
+        </div>
+        <h2 class="profile-title page-title">Оформление заказа</h2>
+      </div>
+      <div class="checkout-content">
+        <section class="section-order">
+
+          <div class="order-info">
+            
+            <div class="order-top">
+              <div class="order-title">Ваш заказ:</div>
+              <a class="odrer-back__link" href="#">Изменить</a>
+            </div>
+
+            <div class="order-wrapper">
+
+              <div class="order-item">
+                <div class="order-item__title">Сет Румяный</div>
+                <div class="order-item__price">
+                    <span class="order-item__count">1</span>
+                    <span>x</span>
+                    <span class="order-item__total-price span-price">1199</span>
+                </div>
+              </div>
+              <div class="order-item">
+                <div class="order-item__title">Имбирь</div>
+                <div class="order-item__price">
+                    <span class="order-item__count">3</span>
+                    <span>x</span>
+                    <span class="order-item__total-price span-price">0</span>
+                </div>
+              </div>
+              <div class="order-item">
+                <div class="order-item__title">Васаби</div>
+                <div class="order-item__price">
+                    <span class="order-item__count">3</span>
+                    <span>x</span>
+                    <span class="order-item__total-price span-price">0</span>
+                </div>
+              </div>
+              <div class="order-item">
+                <div class="order-item__title">Соевый соус</div>
+                <div class="order-item__price">
+                    <span class="order-item__count">2</span>
+                    <span>x</span>
+                    <span class="order-item__total-price span-price">0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="checkout-delivery__price">
+                <span>Доставка</span>
+                <span class="delivery-price">Бесплатно</span>
+            </div>
+            <div class="checkout-total__price">
+              <span>Итого:</span>
+              <span class="total-price span-price">1199</span>
+            </div>
+
+            <div class="bonus">
+              <div class="bonus-balance">
+                <span>Доступно</span>
+                <span class="balance" id="bonusBalance">670</span>
+                <span>бонусов</span>
+              </div>
+              <div class="bonus-range">
+                <label for="">Оплатить бонусами</label>
+              <input
+                type="range"
+                min="1"
+                max="20"
+                value="15"
+                class="bonus-slider"
+                id="bonusSlider"
+              />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-delivery">
+          <div class="delivery">
+
+            <div class="delivery-type">
+              <button class="delivery-type__btn" type="button" data-type="delivery">
+                Доставка
+              </button>
+              <button class="delivery-type__btn active-type" type="button" data-type="takeAway">
+                Самовынос
+              </button>
+            </div>
+
+            <div class="delivery-adrress">
+              <i class="ri-store-2-line"></i>
+              <span>Тюмень, ул. Александра Митинского, 7</span>
+            </div>
+
+            <h3 class="checkout-section-title">Данные получателя</h3>
+          <div class="input-group user-group">
+            <div class="input-group-name">
+              <input class="input input-name" id="name" type="text" required name="name" label="Имя" placeholder="Имя" value="" />
+            </div>
+            <div class="input-group-phone">
+              <input class="input user-phone" id="phone" name="phone" type="tel" required value="+7"/>
+            </div>
+          </div>
+              
+            <div class="user-adrress">
+              <div class="row">
+                <div class="street">
+                  <input class="input input-street" id="street" type="text" required name="street" placeholder="Улица" value="" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="building">
+                  <input class="input input-building" id="building" type="text" required name="building" placeholder="Дом" value="" />
+                </div>
+                <div class="frame">
+                  <input class="input input-frame" id="frame" type="text" required name="frame" placeholder="Корпус" value="" />
+                </div>
+                <div class="entrance">
+                  <input class="input input-entrance" id="entrance" type="text" required name="entrance" placeholder="Подьезд" value="" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="apertment">
+                  <input class="input input-apertment" id="apertment" type="text" required name="apertment" placeholder="Квартира" value="" />
+                </div>
+                <div class="floor">
+                  <input class="input input-floor" id="floor" type="text" required name="floor" placeholder="Этаж" value="" />
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="comment">
+                  <textarea class="input input-comment" id="comment" type="textarea" required name="comment" placeholder="Добавьте комментарий. Например, что у вас не работает домофон" value="" ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment">
+            <h3 class="checkout-section-title">Способ оплаты</h3>
+            <select class="select payment-select" id="paymentSelect">
+              <option value="cash">Наличными</option>
+              <option value="courier">Картой курьеру</option>
+              <option value="online">Оплата онлайн</option>
+              <option value="apple">Apple Pay</option>
+            </select>
+            <div class="type-cash">
+              <button class="cash-btn cash-btn-active">Без здачи</button>
+              <button class="cash-btn" data-cash="1000">c 1 000 ₽</button>
+              <button class="cash-btn" data-cash="2000">c 2 000 ₽</button>
+              <button class="cash-btn" data-cash="5000">c 5 000 ₽</button>
+            </div>
+            
+        </section>
+        
+        <div class="checkout-footer">
+          <span class="span-offer">Нажимая кнопку "отправить заказ", Вы соглашаетесь с условиями <a class="offer" href="">публичной оферты.</a></span>
+          <button class="button button-purple send-order">Отправить заказ</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/checkout.js"></script>
+  </body>
+</html>

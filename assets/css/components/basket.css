@@ -1,0 +1,52 @@
+/*=============== BASKET ===============*/
+.basket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .basket-link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  .basket-link i{
+    font-size: 32px;
+    background: none;
+  }
+  .basket-count{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--yellow-color);
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    top: -6px;
+    left: -8px;
+  }
+  .basket-navbar{
+    margin-left: 15px;
+  }
+  .basket-navbar .basket-count{
+    
+  } 
+  .basket-mobile{
+    position: sticky;
+    left: 82%;
+    bottom: 35px;
+    background-color: var(--purple-color);
+    border-radius: 100%;
+    box-shadow: var(--box-shadow);
+    width: 60px;
+    height: 60px;
+  }
+  .basket-mobile i{
+    color: #fff;
+  }
+  

@@ -1,0 +1,352 @@
+/*=============== MODAL LAYOUT ===============*/
+.modal-overlay{
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+  }
+  .modal{
+    min-width: 720px;
+    max-width: 750px;
+    height: 450px;
+    color: var(--text-color);
+    border-radius: 1.5rem;
+    padding: 50px;
+    animation: bootom-show ease-in-out .4s;
+  }
+  .arrow-down{
+    background-color: rgb(245, 245, 245);
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+  }
+  .arrow-down{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 500;
+  }
+  .arrow-down i{
+    font-size: 36px;
+  }
+  .modal-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .modal-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.5rem;
+  }
+  .modal-content::-webkit-scrollbar{
+    display: none;
+  }
+  .is-open{
+    opacity: 1;
+    visibility: visible;
+  }
+  .is-open .modal{
+    transform: translateY(0%);
+  }
+  .modal-title{
+    font-size: 22px;
+    font-weight: var(--font-regular);
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .modal-subtitle{
+    margin-bottom: 15px;
+    color: var(--text-color--descr)
+  }
+  .modal-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px;
+  }
+  .modal-img{
+    width: 100%;
+  }
+  .modal-image img{
+    object-fit: cover;
+  }
+  .modal-body{
+    position: relative;
+    border-radius: 2rem 2rem 0 0;
+    padding: 20px 10px;
+    overflow-y: scroll;
+  }
+  .modal-body::-webkit-scrollbar{
+    display: none;
+  }
+  .modal-product-title{
+    width: 100%;
+    text-align: start;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .modal-description{
+    margin-bottom: 30px;
+  }
+  .pizza-size-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 247);
+    width: 100%;
+    height: 40px;
+    border-radius: 1rem;
+    font-size: 14px;
+    color: #000;
+    padding: 4px;
+    margin-bottom: 30px;
+  }
+  .btn-pizza-size{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: none;
+    border-radius: 1rem;
+    transition: .2s;
+  }
+  .active-size{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: rgb(6 5 50 / 19%) 0px 6px 20px;
+    border: 1px solid var(--purple-color-btn);
+    color: var(--purple-color-btn);
+  }
+  .calories-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .calories-item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    padding: 5px;
+    background-color: rgb(247, 247, 247);
+    /* box-shadow: rgb(6 5 50 / 19%) 1px 8px 20px; */
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+  .calories-item-count{
+    font-size: 14px;
+    font-weight: var(--font-semi-bold);
+  }
+  .calories-item-name{
+    font-size: 10px;
+    color: var(--text-color--descr);
+  }
+  .pizza-modifier{
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    margin-top: 15px;
+  }
+  .modifier-title{
+    font-weight: var(--font-regular);
+    font-size: 16px;
+  }
+  .modifier-btn{
+    position: relative;
+    cursor: pointer;
+    touch-action: manipulation;
+    width: calc(33.3333% - 8px);
+    box-shadow: rgba(6, 5, 50, 0.12) 0px 4px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 8px 8px 0px;
+    padding: 8px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 12px;
+    flex-flow: column;
+    transition: box-shadow 150ms ease-out 0s, border;
+  }
+  .modifier-btn p{
+    margin-bottom: 10px;
+    font-weight: var(--font-semi-bold);
+  }
+  .modifier-btn i{
+    display: none;
+  }
+  .selected{
+    border: 2px solid var(--purple-color-btn);
+    color: var(--purple-color-btn);
+  }
+  .selected.modifier-btn i{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 22px;
+    color: var(--purple-color);
+  }
+  .modal-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .modal-btn{
+   color: #fff;
+   font-size: 16px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  .span-price{
+    
+  }
+  .span-price::after{
+    content: '₽';
+    margin-left: 3px;
+  }
+
+  /*=============== MODAL SECTION DOP ===============*/
+.section-dop{
+}
+.dop-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.dop-item{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 10px;
+}
+.dop-title{
+  margin-bottom: 5px;
+}
+.dop-descr{
+  margin-bottom: 5px;
+}
+.dop-counter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  width: 90%;
+}
+.dop-item-image{
+  max-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+.dop-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*=============== MODAL SECTION UPSALE ===============*/
+.upsale{
+  overflow: hidden;
+  position: relative;
+}
+.upsale-wrapper{
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  padding: 0px 0px 20px 0px;
+}
+
+.upsale-item{
+  min-width: 200px;
+  max-width: 200px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 10px;
+}
+.upsale-imege{
+  width: 100%;
+}
+.upsale-body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.upsale-title{
+  margin-bottom: 10px;
+}
+.upsale-counter{
+  margin-bottom: 5px;
+  width: 90%;
+}
+.upsale-btn{
+  color: #fff;
+}
+/*=============== MODAL LOGIN ===============*/
+.login-modal{
+  width: 100%;
+  height: 100vh;
+}
+.login-modal .modal-title{
+  margin-bottom: 70px;
+}
+.login-modal .modal-subtitle{
+  margin-bottom: 45px;
+  color: #fff;
+}
+.login-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.login-input{
+  padding: 10px;
+  border-radius: 0.5rem 0 0 0.5rem ;
+  width: 80%;
+}
+.button-login{
+  background-color: #fff;
+  width: 20%;
+  height: 35px;
+  border-radius: 0 0.5rem 0.5rem 0;
+}

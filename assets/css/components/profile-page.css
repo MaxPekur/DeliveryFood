@@ -1,0 +1,185 @@
+.profile{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/*=============== TABS ===============*/
+.tabs{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap ;
+  margin-bottom: 25px;
+}
+.tabs li{
+  background: none;
+  color: #6D6D6D;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.tabs li.current{
+  border-bottom: 2px solid var(--purple-lite);
+  color: #000;
+}
+.tab-content{
+  width: 100%;
+  display: none;
+  background: transparent;
+}
+.tab-content.current{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab-title{
+  margin-bottom: 25px;
+}
+/*=============== TABS order ===============*/
+.tab-orders{
+  display: grid;
+  grid-gap: 15px;
+  width: 100%;
+}
+.tab-order{
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 20% 75% 5%;
+  align-items: center;
+}
+.active-order{
+  border: 1px solid var(--purple-lite);
+}
+.tab-order__status-image img{
+  width: 40px;
+  height: 40px;
+}
+.tab-order__body{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.tab-order__status{
+  margin-bottom: 3px;
+  color: var(--green-color);
+}
+.tab-order__type{
+  font-size: 16px;
+  font-weight: var(--font-regular);
+  margin-bottom: 3px;
+}
+.tab-order__link i{
+  font-size: 24px;
+}
+.order-completed{
+  opacity: 0.8;
+}
+/*=============== TABS bonus ===============*/
+.bonus-card{
+  margin-top: 25px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  border-radius: 1rem;
+  background-color: var(--purple-color);
+  box-shadow: var(--box-shadow);
+}
+.bonus-card__content{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bonus-count{
+  font-size: 22px;
+}
+.row-block{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.bonus-card__title{
+  font-size: 16px;
+}
+/*=============== TABS adrress ===============*/
+.tab-adrress__wrapper{
+  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+}
+.tab-adrress{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--body-grey-color);
+  border-radius: 1rem;
+  padding: 15px;
+  position: relative;
+}
+.tab-adrress i{
+  font-size: 20px;
+}
+.tab-adrress i:hover{
+  color: var(--red-color);
+}
+.add-adrress{
+  margin-top: 35px;
+  color: #fff;
+}
+
+/*=============== TABS profile ===============*/
+.profile-form{
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.profile-input{
+  background-color: var(--body-grey-color);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 0.85rem;
+}
+.block-subscribe{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.change-subscribe{
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+}
+.subscribe-descr{
+  font-size: 10px;
+  color: var(--text-color-grey);
+  width: 100%;
+}
+.profile-action{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  height: 100px;
+  border-radius: 1rem 1rem 0rem  0rem;
+}
+.profile-save{
+  width: 40%;
+  color: #fff;
+}
+.profile-exit{
+  width: 40%;
+  color: #fff;
+}

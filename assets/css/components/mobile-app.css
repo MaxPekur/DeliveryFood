@@ -1,0 +1,32 @@
+/*=============== MOBILE APP ===============*/
+.mobile-app{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    box-shadow: 0 0 10px 1px #555;
+    position: relative;
+    padding: 0 15px;
+}
+.mobile-app__close{
+  height: 100%;
+  padding: 10px 0;
+}
+.mobile-app__item{
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.mobile-app__img{
+  max-height: 35px;
+  margin-right: 15px;
+}
+.mobile-app__title{
+  font-size: 16px;
+  font-weight: var(--font-semi-bold);
+}
+.mobile-app__descr{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}

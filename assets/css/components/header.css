@@ -1,0 +1,120 @@
+/*=============== HEADER ===============*/
+  .header{
+    width: 100%;
+    background: var(--purple-color);
+    height: var(--header-height);
+  }
+  .header-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-link{
+    color: #fff;
+    font-size: 30px;
+    font-weight: var(--font-semi-bold);
+  }
+  .toggle-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  .toggle-link i{
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: var(--font-lite);
+    color: var(--purple-color-btn);
+  }
+  .toggle-menu{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--purple-color);
+    top: 0;
+    left: -150%;
+    transition: .4s;
+    z-index: 1000;
+  }
+  .toogle-menu__close i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff;
+    font-size: 36px;
+  }
+  .toggle-menu__list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .toggle-menu__item{
+    margin-bottom: 15px;
+  }
+  .toggle-menu__link{
+    color: #fff;
+    font-size: 18px;
+  }
+  .header-phone{
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  .phone-link{
+    color: #fff;
+    margin-left: 7px;
+  }
+  .header-work__time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .header-work__time i{
+    margin-right: 5px;
+  }
+  .info-links__list{
+    display: flex;
+  }
+  .header-info__link{
+    margin-right: 15px;
+    color: #fff;
+    font-size: 14px;
+  }
+  .auth-group{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .login-btn,
+  .out-btn{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  .login-btn,
+  .out-btn i{
+    font-size: 20px;
+    color: var(--purple-color);
+  }
+  .user-name {
+    display: none;
+    margin-right: 10px;
+    color: var(--purple-color-btn);
+  }
+  .user-name:hover {
+    opacity: .5;
+  }
+  .out-btn {
+    display: none;
+  }

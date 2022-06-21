@@ -1,0 +1,156 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+:root {
+  /*========== Font and typography ==========*/
+  --body-font: 'Nunito', sans-serif;
+  --normal-font-size: 14px;
+  --small-font-size: 10px;
+  --line-height: 20px;
+  /*========== Font weight ==========*/
+  --font-lite: 300;
+  --font-regular: 400;
+  --font-semi-bold: 700;
+  --header-height: 70px;
+  --box-shadow: rgba(6, 5, 50, 0.12) 0px 4px 20px;
+
+  /*========== Colors ==========*/
+  --yellow-color: #F8D948;
+  --green-color: #00A779;
+  --red-color: #FF0000;
+  --purple-color: #8742d6;
+  --purple-lite: #bb80ff;
+  --text-color:  #000;
+  --text-color-grey:  rgb(92, 99, 112);
+  --text-color-white: rgb(255, 255, 255);
+  --body-color: #fff;
+  --body-grey-color: rgb(245, 245, 245);
+  --border: rgb(206, 205, 205);
+  --linear-gradient: linear-gradient(to right bottom,
+  rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0.3));
+}
+
+/* Responsive typography */
+@media screen and (min-width: 992px) {
+  :root {
+    --normal-font-size: 14px;
+    --small-font-size: 10px;
+  }
+}
+
+/*=============== BASE ===============*/
+body{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-lite);
+  background: var(--body-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  line-height: var(--line-height);
+}
+h1,h2,h3,h4{
+  color: var(--text-color);
+  font-weight: var(--font-regular);
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+button,
+input{
+  border: none;
+  outline: none;
+}
+.button{
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-family: var(--body-font);
+  transition: all 100ms ease-in-out;
+  color: #8742d6d0;
+  padding: 10px 20px;
+  border: 2px solid #8742d6d0;
+  background-color: inherit;
+  opacity: .8;
+  max-width: 180px;
+}
+.button:hover{
+  opacity: 1;
+  background: #8742d6d0;
+  color: var(--text-color-white);
+}
+/*=============== ANIMATION ===============*/
+@keyframes bootom-show {
+  0% {
+    transform: translateY(100%);
+    transition-timing-function: ease-in;
+    transition-property: all;
+  }
+  100% {
+      transform: translateY(0%);
+      transition-timing-function: ease-in;
+      transition-property: all;
+  }
+}
+@keyframes bg-hue {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+/*=============== LAYOUT CLASS ===============*/
+.container{
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow-x: hidden;
+}
+.section-title{
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: var(--font-regular);
+}
+.d-none{
+  display: none;
+}
+.overflow{
+  overflow: hidden;
+}
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+/*=============== LAYOUT ===============*/
+.to-back{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--linear-gradient);
+  backdrop-filter: blur(1rem);
+  box-shadow: var(--box-shadow);
+  border-radius: 50%;
+  margin-right: 25px;
+}
+.page-header{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.page-header__container{
+  display: flex;
+  align-items: center;
+}
